@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: neoDisplay;
+  src: url(../public/FontsFree-Net-NoeDisplay-Bold.ttf);
+}
+
+.neo {
+  font-family: neoDisplay;
+}
+
+@font-face {
+  font-family: larsseit;
+  src: url(../public/Larsseit.otf);
+}
+
+.larsseit {
+  font-family: larsseit;
+}
+
+@font-face {
+  font-family: larsseitMedium;
+  src: url(../public/Larsseit-Medium.otf);
+}
+
+.larsseitMedium {
+  font-family: larsseitMedium;
+}
+
+@font-face {
+  font-family: larsseitBold;
+  src: url(../public/Larsseit-Bold.otf);
+}
+
+.larsseitBold {
+  font-family: larsseitBold;
+}
+
+@font-face {
+  font-family: larsseitlight;
+  src: url(../public/Larsseit-Thin.otf);
+}
+
+.larsseitlight {
+  font-family: larsseitlight;
+}

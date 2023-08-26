@@ -14,7 +14,7 @@ const MainBanner = () => {
                             <FiSearch className='text-2xl text-white'></FiSearch>
                         </div>
                         <div>
-                            <button className="py-4 px-10 rounded-3xl larsseit bg-[#00C9E0] text-white uppercase tracking-[3px] text-xs">menu</button>
+                            <button className="py-4 px-10 rounded-3xl larsseit bg-[#00C9E0] text-white uppercase tracking-[3px] text-xs hover:scale-125 transition-all duration-300 hover:tracking-[5px]">menu</button>
                         </div>
                     </div>
                 </nav>

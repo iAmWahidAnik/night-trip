@@ -1,5 +1,6 @@
 import Footer from "./Footer/Footer";
 import MainBanner from "./MainBanner/MainBanner";
+import PeoplesThoughts from "./PeoplesThoughts/PeoplesThoughts";
 import PickYourTrip from "./PickYourTrip/PickYourTrip";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
             <MainBanner></MainBanner>
             <PickYourTrip></PickYourTrip>
+            <PeoplesThoughts></PeoplesThoughts>
             <Footer></Footer>
         </div>
     );

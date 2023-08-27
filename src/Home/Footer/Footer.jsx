@@ -1,21 +1,29 @@
 import { FiTwitter, FiFacebook, FiInstagram } from 'react-icons/fi';
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
+
 
 const Footer = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
         <div className="min-h-screen bg-[#071827]">
             <div className="text-white text-center pt-5">
-                <h1 className="text-[72px] neo">See you soon!</h1>
-                <p className="text-2xl larsseitMedium my-5">We hope to meet each other <br /> very soon.</p>
+                <h1 data-aos="zoom-in" data-aos-delay="300" className="text-[72px] neo">See you soon!</h1>
+                <p data-aos="zoom-in" data-aos-delay="400" className="text-2xl larsseitMedium my-5">We hope to meet each other <br /> very soon.</p>
             </div>
             <div>
-                <div className=''>
+                <div data-aos="zoom-out-up" className=''>
                     <div className='w-[80px] h-[2px] bg-[#41EAD4] -rotate-90 mx-auto my-32'>
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-5 max-w-5xl mx-auto text-white">
-                <div>
+            <div className="grid grid-cols-2 lg:grid-cols-5 text-left lg:text-lef max-w-5xl mx-auto text-white">
+                <div data-aos="fade-right" data-aos-delay="100" className='p-5 lg:p-0'>
                     <h1 className="text-[18px] larsseit tracking-wider">ABOUT</h1>
                     <svg className="my-5" xmlns="http://www.w3.org/2000/svg" width="57" height="8" viewBox="0 0 57 8" fill="none">
                         <rect y="3" width="50" height="1" rx="0.5" fill="#41EAD4" />
@@ -27,7 +35,7 @@ const Footer = () => {
                         <p className="larsseitlight">Copyrights</p>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-right" data-aos-delay="200" className='p-5 lg:p-0'>
                     <h1 className="text-[18px] larsseit tracking-wider">FAQ</h1>
                     <svg className="my-5" xmlns="http://www.w3.org/2000/svg" width="57" height="8" viewBox="0 0 57 8" fill="none">
                         <rect y="3" width="50" height="1" rx="0.5" fill="#41EAD4" />
@@ -40,7 +48,7 @@ const Footer = () => {
                         <p className="larsseitlight">Contribute</p>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-right" data-aos-delay="300" className='p-5 lg:p-0'>
                     <h1 className="text-[18px] larsseit tracking-wider">EVENTS</h1>
                     <svg className="my-5" xmlns="http://www.w3.org/2000/svg" width="57" height="8" viewBox="0 0 57 8" fill="none">
                         <rect y="3" width="50" height="1" rx="0.5" fill="#41EAD4" />
@@ -53,7 +61,7 @@ const Footer = () => {
                         <p className="larsseitlight">Spooky Land</p>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-right" data-aos-delay="400" className='p-5 lg:p-0'>
                     <h1 className="text-[18px] larsseit tracking-wider">CONTACT</h1>
                     <svg className="my-5" xmlns="http://www.w3.org/2000/svg" width="57" height="8" viewBox="0 0 57 8" fill="none">
                         <rect y="3" width="50" height="1" rx="0.5" fill="#41EAD4" />
@@ -66,20 +74,20 @@ const Footer = () => {
                         <p className="larsseitlight">+33 555 666</p>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-right" data-aos-delay="500" className='p-5 lg:p-0'>
                     <h1 className="text-[18px] larsseit tracking-wider">FOLLOW</h1>
                     <svg className="my-5" xmlns="http://www.w3.org/2000/svg" width="57" height="8" viewBox="0 0 57 8" fill="none">
                         <rect y="3" width="50" height="1" rx="0.5" fill="#41EAD4" />
                         <rect x="52.5857" y="0.707107" width="4" height="4" transform="rotate(45 52.5857 0.707107)" stroke="#41EAD4" />
                     </svg>
                     <div className='flex gap-5 text-2xl my-5'>
-                            <FiTwitter className='text-[#41EAD4]'></FiTwitter>
-                            <FiInstagram className='text-[#41EAD4]'></FiInstagram>
-                            <FiFacebook className='text-[#41EAD4] cursor-all-scroll'></FiFacebook>
-                        </div>
+                        <FiTwitter className='text-[#41EAD4]'></FiTwitter>
+                        <FiInstagram className='text-[#41EAD4]'></FiInstagram>
+                        <FiFacebook className='text-[#41EAD4] cursor-all-scroll'></FiFacebook>
+                    </div>
                 </div>
             </div>
-            <div className='text-white text-center py-20'>
+            <div data-aos="fade-up" data-aos-delay="100" className='text-white text-center py-20'>
                 <p>copyright - wahid anik - night trip - all rights reserved</p>
                 <p className="text-4xl text-white neo mt-10">NT<span className="text-[#00C9E0]">.</span></p>
             </div>
